@@ -1,0 +1,35 @@
+Meeting summaries for LeftBracket:
+
+Team members:
+Shuwen Ju(Team lead)
+Gordon Bert
+Mohamed Rabi Andaloussi
+
+
+Feb 23, 2023, 18:30pm:
+    For our project, we decided to do a website show user's stock portfolio. We will be calling a stock api, polygon.io, to retrieve real data about a specific stock, this api allows us to see the high-low open-close pricing of a stock on a specific day, so on our website, we would have a landing page, registration page, log in page and user portfolio page. we would ask the user to register the stocks they bought, and with the help of polygon.io, we can show user a chart with Chart.js (another api) of the stock changes or with some other calculation. That is the idea of the website, we would probably add more details in the user portfolio page, but we are starting some part right now and maybe making it a bit more complicated when we get there. Bert already finished registration page for user, Mohamed is working on the user portfolio page, the function to allow user to choose a stock to add to portfolio, validation will be implemented. I am starting to work on the landing page, and will implement the templating idea you mentioned in class today.
+
+Feb 25, 2023, 19:00pm:
+	For the weekend, we will continue to work on our previously assigned tasks.
+
+Feb 27, 2023, 22:00pm:
+	During the weekend, Shuwen mocked up a customer portfolio page, without completing the full functions, but was able to connect polygon.io stock api and retrieve stock pricings given the stock name and a specific date, and was also able to connect to Chart.js api to display the data requested from polygon.io on the chart. For now our landing page by Shuwen is 99% done with the help of bootstrap template. Registration and log in page is also close to be done by Bert.
+	Tonight we discussed in detail about what functions we need to achieve with the user portfolio page, we’ve decided on 3 tables in the database, user personal info, stock general info and a join table for the user-stock that was bought on a specific day.
+	For user portfolio page, Mohamed will continue working on it, the format will be similar as our first assignment, where we have a page to display all stocks bought by a user once he logs-in, a button to pop up modal to add stock, and the user would also be able to delete stock from his portfolio, view the detail of a stock etc… charts will support the visual part displaying what the user owns.
+	Bert will continue on working on the registration/log in page. With templating, we had some difficulties joining the css part for all the pages, Bert is fixing it.
+	Shuwen is back on the landing page, we want to display on the lading page all the stocks we offer the user, so that they can see what we offer before logging in, we will pull that from our stock database.
+
+Feb 28, 2023, 19:47pm:
+	During the meeting today, Mohamed and Bert perfected the login page. Now the templating for header & footer is working on across all pages. Shuwen finished the function where we have a section on landing page pulling data from database displaying the stock we offer. We also perfected the session function so that when the user is logged in, we saved user data in the global variable $_SESSION so that the data can be manipulated later in the portfolio page. We spent some time figuring out how to use git to push & pull the updates. We are now ready to jump in to portfolio page.
+
+Mar 2, 2023, 19:47pm:
+	Today we worked on the project spec, Shuwen drafted up the paragraphs to introduce the project, Bert did a UML graph to show the website flow, Mohamed did the database chart to show how our database works.
+
+Mar 3, 2023 18:00pm:
+	Shuwen added the donut chart on the portfolio page for the user, now it is able to display the percentage of the stocks that the user owns. We realized that more it would make more sense to display real time data instead of pulling data from the database showing the percentage of the user stocks at its bought price. Mohamed encountered some issues creating the add stock function, Bert and Mohamed are working on that.
+
+Mar 6, 2023 18:00pm:
+	Shuwen changed the chart to bar chart on the portfolio page for the user, now the user can see their assets changing from their bought time compare to todays value. Mohamed is trying to add validations on the add stock modal. Bert is working on ading the percentage and today's value calling the API to the table.
+
+Mar 7, 2023 18:00pm:
+	Today we have a final debugging session, Shuwen finished the validations for add/edit stock, Bert brought back the doughnut chart we previously removed and added the statistics below the chart. Bert also fixed some styling.
